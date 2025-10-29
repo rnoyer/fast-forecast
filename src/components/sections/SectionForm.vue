@@ -25,6 +25,7 @@ async function handleSubmit() {
 <style scoped>
 #form {
     @media (min-width: 769px) {
+      margin-top: 20vh;
       justify-self: center;
       grid-area: form;
   }

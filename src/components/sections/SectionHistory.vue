@@ -6,16 +6,16 @@ const historyStore = useHistoryStore()
 
 </script>
 <template>
-  <div v-if="!historyStore.isEmpty" id="sidebar" class="flex flex-col w-full items-center gap-4">
+  <div v-if="!historyStore.isEmpty" id="sidebar" class="flex flex-col w-full items-center gap-4 max-w-xs">
     <h2 class="flex justify-center items-center glass w-full min-h-12 text-xl text-slate-600 font-ff uppercase">History</h2>
     <div class="flex flex-col gap-4 w-full">
-        <HistoryCard 
-          v-for="(item, index) in historyStore.history" 
+        <HistoryCard
+          v-for="(item, index) in historyStore.history"
           :key="index"
           :itemData="item"
         />
     </div>
-    <button 
+    <button
       @click="historyStore.$reset"
       class="btn btn-lg px-16 text-xl text-slate-600 mb-4"
     >

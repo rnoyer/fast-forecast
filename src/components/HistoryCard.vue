@@ -16,7 +16,7 @@ const displayTemp = computed(() => searchStore.isCelsius ? `${props.itemData.tem
 </script>
 <template>
   <div class="glassy-card">
-    <h3 class="pb-2 font-bold text-slate-600 uppercase">{{itemData.location}}</h3>
+    <h3 class="pb-2 font-bold text-slate-600 uppercase truncate">{{itemData.location}}</h3>
     <ul class="">
       <li class="">Temperature: <span class="font-bold">{{displayTemp}}</span></li>
       <li class="">Humidity: <span class="font-bold">{{itemData.humidity}}%</span></li>
