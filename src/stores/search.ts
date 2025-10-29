@@ -8,9 +8,9 @@ export const useSearchStore = defineStore('search', () => {
   const tempCelsius = ref(0)
   const tempFar = computed(() => {
     if (tempCelsius.value) {
-      return Math.floor(tempCelsius?.value * (9 / 5) + 32)
+      return Math.floor(tempCelsius.value * (9 / 5) + 32)
     } else {
-      return null
+      return 0
     }
   })
   const isResponseOk = ref(false)
