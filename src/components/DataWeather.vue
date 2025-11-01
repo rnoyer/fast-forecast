@@ -14,7 +14,7 @@ function toggleUnit(): void {
 
 </script>
 <template>
-  <div id="weather" class="flex flex-col w-full gap-4">
+  <div id="weather" class="flex flex-col w-full gap-4 max-w-xs">
     <h3 class="text-xl">Actual forecast for: <span class="font-bold italic">{{ searchStore.location }}</span></h3>
     <block-temperature
       :temperature="displayTemp"

@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-  <div class="flex flex-col w-full gap-4">
+  <div class="flex flex-col w-full gap-4 max-w-xs">
     <div class="skeleton h-8 w-full"></div>
     <div class="skeleton h-12 w-full"></div>
     <div class="skeleton h-12 w-full"></div>

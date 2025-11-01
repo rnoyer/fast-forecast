@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 <template>
-  <div id="search-result" class="mb-12 w-full flex">
+  <div id="search-result" class="mb-12 w-full flex justify-center">
     <slot />
   </div>
-  
+
 </template>
 
 <style scoped>
